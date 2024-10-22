@@ -654,7 +654,7 @@ class Program
     
         Console.WriteLine("Hello, World!");
 
-        using (BinaryReader reader = new BinaryReader(File.Open(@"C:\Users\michi\Downloads\whiteout-survival-1-14-100\assets\data\luapackage_64_d916dc26144050f1ddc0d086124deef2.unity3d", FileMode.Open)))
+        using (BinaryReader reader = new BinaryReader(File.Open(@"file.unity3d", FileMode.Open)))
         {
             var sigString = reader.ReadAsciiNullTerminatedString();
             if (sigString != "UnityFS")
