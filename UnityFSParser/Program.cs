@@ -672,7 +672,7 @@ class Program
             var directoryInfo = (flags & 0x40) > 0;
             var blockListEnd = (flags & 0x80) > 0;
 
-            //var hash = reader.ReadBytes(16);
+            var hash = reader.ReadBytes(14);
             var blocksInfoBytes = reader.ReadBytes((int)compressedBlockSize);
             BinaryReader blockReader;
 
